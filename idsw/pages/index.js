@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import icon from '../public/icon.png';
 
 export default function Home() {
   return (
@@ -12,13 +13,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <img src="https://d1fdloi71mui9q.cloudfront.net/nX3xVId2RRuBeFxfercV_w01C0ks36F8dQ3Xf" />
+        <Image src={icon} width={150} height={150} />
 
         <h1 className={styles.title}>
           Welcome to{' '}
-          <a href="https://www.facebook.com/idiot.sandwichk" target={'_blank'}>
-            IDSW HK
-          </a>
+          <a href="https://www.facebook.com/idiot.sandwichk">IDSW HK</a>
         </h1>
 
         <strong>
