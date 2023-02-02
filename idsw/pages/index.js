@@ -13,7 +13,19 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Image src={icon} width={150} height={150} alt="Picture of the icon" />
+        <div
+          style={{
+            borderRadius: '50%',
+            overflow: 'hidden',
+          }}
+        >
+          <Image
+            src={icon}
+            width={150}
+            height={150}
+            alt="Picture of the icon"
+          />
+        </div>
 
         <h1 className={styles.title}>
           Welcome to{' '}
